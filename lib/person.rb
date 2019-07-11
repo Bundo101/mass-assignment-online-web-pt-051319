@@ -6,7 +6,7 @@ class Person
   
   def initialize(attr_hash)
     attr_hash.each do |attribute, value|
-     binding.pry 
+     self.send("#{attribute}=") 
     end
   end
   
